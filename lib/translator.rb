@@ -3,14 +3,14 @@ require"yaml"
 
 def load_library(file_path)
  emoticons = YAML.load(file_path)
- fresh_array = {}
+ fresh_hash = {}
  
  emoticons.each.do |key,value|
    fresh_array[key] = {}
    fresh_array[key] [:english] = value[0]
    fresh_array[key] [:japanese] = value[1]
  end
- 
+ fresh_array
 end
 
 def get_japanese_emoticon
