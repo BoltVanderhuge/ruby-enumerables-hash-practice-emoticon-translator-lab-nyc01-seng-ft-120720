@@ -7,7 +7,7 @@ def load_library(file_path)
  
  emoticons.each.do |key,value|
    fresh_array[key] = {}
-   
+   fresh_array[key] 
  end
  
 end
