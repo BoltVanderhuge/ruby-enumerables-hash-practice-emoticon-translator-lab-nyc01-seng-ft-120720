@@ -6,11 +6,11 @@ def load_library(file_path)
  fresh_hash = {}
  
  emoticons.each.do |key,value|
-   fresh_array[key] = {}
-   fresh_array[key] [:english] = value[0]
-   fresh_array[key] [:japanese] = value[1]
+   fresh_hash[key] = {}
+   fresh_hash[key] [:english] = value[0]
+   fresh_hash[key] [:japanese] = value[1]
  end
- fresh_array
+ fresh_hash
 end
 
 def get_japanese_emoticon
