@@ -13,7 +13,7 @@ def load_library(file_path)
  fresh_hash
 end
 
-def get_japanese_emoticon(file_path,emoticons)
+def get_japanese_emoticon(file_path,emoticon)
  library = load_library(file_path)
   emoticons = library.keys.find do |key|
     library[key][:english] == emoticon
