@@ -17,10 +17,10 @@ end
 def get_japanese_emoticon(file_path,emoticon)
   library = load_library(file_path)
   binding.pry
-  emoticon_jp = library.keys.find do |key|
+  emoticon_key = library.keys.find do |key|
     library[key][:english] == emoticon
   end
-  emoticon_jp ? library[emoticon][:japanese] : "Sorry, that emoticon was not found"
+  #emoticon_key ? library[emoticon_key][:japanese] : "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(file_path,emoticon)
