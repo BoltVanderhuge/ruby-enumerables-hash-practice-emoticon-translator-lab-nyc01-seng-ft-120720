@@ -1,5 +1,6 @@
 # require modules here
 require "yaml"
+require "pry"
 
 def load_library(file_path)
  emoticon = YAML.load_file(file_path)
@@ -15,6 +16,7 @@ end
 
 def get_japanese_emoticon(file_path,emoticon)
   library = load_library(file_path)
+  pry
   emoticon = library.keys.find do |key|
     library[key][:english] == emoticon
   end
